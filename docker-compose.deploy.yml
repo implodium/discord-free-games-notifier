@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  free-games-notifier:
+    image: docker.pkg.github.com/implodium/discord-free-games-notifier/app
+    container_name: free-games-notifier-app
+    env_file:
+      - .env
